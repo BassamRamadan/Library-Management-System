@@ -24,7 +24,14 @@ router.post('/',
       const book = await Book.create(req.body);
       res.status(201).json(book);
     } catch (e) {
-      res.status(400).json({ error: e.message });
+      return res.status(400).json({
+        error: e.message,
+        details: e.errors.map(err => ({
+          field: err.path,
+          value: err.value,
+          message: err.message
+        }))
+      });
     }
   }
 );
