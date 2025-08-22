@@ -9,6 +9,10 @@ export function errorHandler(err) {
           value: e.value,
           message: e.message
         }))
-      : []
+      : err.map(e => ({
+        field: e.param,
+        value: e.value,
+        message: e.msg
+      }))
   };
 }
