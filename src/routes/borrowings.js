@@ -87,4 +87,14 @@ router.get('/overdue', async (req, res) => {
   res.json(overdue);
 });
 
+// List all borrowings
+router.get('/', async (req, res) => {
+  const now = new Date();
+  const { Op } = await import('sequelize');
+  const borrowing = await Borrowing.findAll({
+    include: [Book, Borrower]
+  });
+  res.json(borrowing);
+});
+
 export default router;
