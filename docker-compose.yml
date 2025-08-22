@@ -25,6 +25,14 @@ services:
     volumes:
       - .:/app
       - /app/node_modules
+  library-tests:
+    build: .
+    command: npm test
+    volumes:
+      - .:/app
+      - /app/node_modules
+    depends_on:
+      - db
 
 volumes:
   db_data:
