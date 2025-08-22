@@ -1,13 +1,14 @@
 import express from 'express';
 import { body, param, validationResult } from 'express-validator';
 import { Borrower, Borrowing, Book } from '../models/index.js';
+import { errorHandler } from '../utils/errorHandler.js';
 
 const router = express.Router();
 
 function handleValidation(req, res) {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
-    return res.status(400).json({ errors: errors.array() });
+    return res.status(400).json(errorHandler(errors));
   }
 }
 
@@ -20,7 +21,7 @@ router.post('/',
       const borrower = await Borrower.create(req.body);
       res.status(201).json(borrower);
     } catch (e) {
-      res.status(400).json({ error: e.message });
+      res.status(400).json(errorHandler(e));
     }
   }
 );
@@ -42,7 +43,7 @@ router.put('/:id',
       await borrower.update(req.body);
       res.json(borrower);
     } catch (e) {
-      res.status(400).json({ error: e.message });
+      res.status(400).json(errorHandler(e));
     }
   }
 );

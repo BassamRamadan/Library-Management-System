@@ -2,13 +2,14 @@ import express from 'express';
 import { body, query, param, validationResult } from 'express-validator';
 import { Book } from '../models/index.js';
 import { createBookLimiter } from '../middleware/rateLimiters.js';
+import { errorHandler } from '../utils/errorHandler.js';
 
 const router = express.Router();
 
 function handleValidation(req, res) {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
-    return res.status(400).json({ errors: errors.array() });
+    return res.status(400).json(errorHandler(errors));
   }
 }
 
@@ -24,14 +25,7 @@ router.post('/',
       const book = await Book.create(req.body);
       res.status(201).json(book);
     } catch (e) {
-      return res.status(400).json({
-        error: e.message,
-        details: e.errors.map(err => ({
-          field: err.path,
-          value: err.value,
-          message: err.message
-        }))
-      });
+      return res.status(400).json(errorHandler(e));
     }
   }
 );
@@ -64,7 +58,7 @@ router.get('/search',
       const books = await Book.findAll({ where });
       res.json(books);
     } catch (e) {
-      res.status(500).json({ error: e.message });
+      res.status(500).json(errorHandler(e));
     }
   }
 );
@@ -83,7 +77,7 @@ router.put('/:id',
       await book.update(req.body);
       res.json(book);
     } catch (e) {
-      res.status(400).json({ error: e.message });
+      res.status(400).json(errorHandler(e));
     }
   }
 );

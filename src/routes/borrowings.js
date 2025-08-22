@@ -3,13 +3,14 @@ import { body, param, validationResult } from 'express-validator';
 import { Borrowing, Book, Borrower } from '../models/index.js';
 import { sequelize } from '../config/database.js';
 import { createBorrowingLimiter } from '../middleware/rateLimiters.js';
+import { errorHandler } from '../utils/errorHandler.js';
 
 const router = express.Router();
 
 function handleValidation(req, res) {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
-    return res.status(400).json({ errors: errors.array() });
+    return res.status(400).json(errorHandler(errors));
   }
 }
 
@@ -47,7 +48,7 @@ router.post('/',
       res.status(201).json(borrowing);
     } catch (e) {
       await t.rollback();
-      res.status(400).json({ error: e.message });
+      res.status(400).json(errorHandler(e));
     }
   }
 );
@@ -68,7 +69,7 @@ router.post('/:id/return', param('id').isInt(), async (req, res) => {
     res.json(borrowing);
   } catch (e) {
     await t.rollback();
-    res.status(400).json({ error: e.message });
+    res.status(400).json(errorHandler(e));
   }
 });
 
