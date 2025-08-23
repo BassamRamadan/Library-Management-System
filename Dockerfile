@@ -5,7 +5,7 @@ WORKDIR /app
 
 # Copy package files and install deps first for better caching
 COPY package*.json ./
-RUN npm install --production
+RUN npm install
 
 # Copy the rest of the app
 COPY . .
