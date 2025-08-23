@@ -10,7 +10,7 @@ A simple, Dockerized REST API for managing books, borrowers, and borrowings.
 - Search by title/author/isbn
 - Basic Auth (configurable via env)
 - Rate limiting on two sensitive endpoints
-- Export CSV/XLSX reports (last month's overdue and borrowings)
+- Export CSV reports (last month's overdue and borrowings)
 - Dockerfile + docker-compose
 - Auto DB sync on startup
 
@@ -54,9 +54,7 @@ pass: admin123
 
 ### Reports (exports)
 - `GET /reports/last-month/borrowings.csv`
-- `GET /reports/last-month/borrowings.xlsx`
 - `GET /reports/last-month/overdue.csv`
-- `GET /reports/last-month/overdue.xlsx`
 
 All endpoints require **Basic Auth**.
 
@@ -76,10 +74,3 @@ See `scripts/schema.sql` for a SQL version.
 - Auto-creates and syncs tables on startup.
 - `BORROW_DAYS` env controls default loan duration (days) if `dueDate` not provided.
 - Rate limiting applied to `POST /books` and `POST /borrowings`.
-
-## Development
-Use hot reload with:
-```bash
-npm install
-npm run dev
-```
