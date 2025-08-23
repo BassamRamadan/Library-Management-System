@@ -51,6 +51,7 @@ pass: admin123
 - `POST /borrowings` (rate limited) — borrow a book `{ borrowerId, bookId, dueDate? }`
 - `POST /borrowings/:id/return` — return book
 - `GET /borrowings/overdue` — list overdue borrowings
+- `GET /borrowings` — list all borrowings
 
 ### Reports (exports)
 - `GET /reports/last-month/borrowings.csv`
