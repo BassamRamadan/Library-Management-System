@@ -1,0 +1,2571 @@
+{
+	"info": {
+		"_postman_id": "8267ad36-6424-41f0-9df6-cab25413a087",
+		"name": "Library-Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5593231"
+	},
+	"item": [
+		{
+			"name": "Dev env",
+			"item": [
+				{
+					"name": "Book CRUD",
+					"item": [
+						{
+							"name": "Get Books",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/11.4.0"
+									}
+								],
+								"url": {
+									"raw": "{{base-URL}}/books",
+									"host": [
+										"{{base-URL}}"
+									],
+									"path": [
+										"books"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get Books",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "User-Agent",
+												"value": "insomnia/11.4.0"
+											}
+										],
+										"url": {
+											"raw": "{{base-URL}}/books",
+											"host": [
+												"{{base-URL}}"
+											],
+											"path": [
+												"books"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sat, 23 Aug 2025 14:22:19 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "204"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache,no-store"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"cc-3J56KvFoo1nqTciy96NNoaGK/8k\""
+										},
+										{
+											"key": "Expires",
+											"value": "Thu, 01 Jan 1970 00:00:00 GMT"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Set-Cookie",
+											"value": ".Tunnels.Relay.WebForwarding.Cookies=CfDJ8Cs4yarcs6pKkdu0hlKHsZsKY7-8WWniZAtQsDtIVeffvfOeJLSna4TsSa5aP2iLvtbM8MpsgKc6ILAuUY74W9nYgbN4DiV-BZZA9otlogtGIlCNDamuLUmqXq_eQC6p4Z8QcVotyIQHxXqOTQkHzpwjXv_fzjXPHMy3WNTw_W0WbxK9Vxb3u-5Q7lIPUhWUapnNWdPdY702yIe2UZdrbtweLX0X4U94zLZmRnkqO1elSiwDz-gU7QtNp4BQk7K8QLL8mcuITZ5Cxv9FJ0vueP-g8wqI_eFObdLeSEsSSArBOlIgfv1yARfwqkM0XDmb7TIBbixz4jJCOvQ5rtsOCU0qK0fDupKFGK4c8k6jiu78o6HbbhnrVAYjvLiGPaJmC1wFQnY4_A22jnDh3zFBFWPwPFPlGUz4Jk6ETRea4bTYDY7byKN6wsFUC3eN50e0MUrMTAAB9zjS0DY_di9oSiY7TnJWj6982mIa8XS5Zd69BgCTpS21k4Ca1tUejzoPFV3Qyd2Zuro0Zyqe53hQbmUci8HnaXJpzuISDpWt3cdkF1s_zGxZBQagXfp1jLVgaltihSgDnOhyeb2L8ypagqN9tHepYVvU02H2fGwZlNQhpVxJXcLIc1rIT8hgHyshWDTlbYas_ROblpJKYC6RpQi0Gw17s0cidE-Jqj7OSrz-2dyBXb3sYg5Z3YGoakP1_oMra8BBOdr0boyRHEM_iFWbfXEoKbcJwrVk_y1baigIcAq6dbO_qtloIgj0BPYv9IpIGRnwBcUVcNjHmpFex4DwaRTIN80_0a2n7sZjxLqoFtHHdbgMN8tgQTsZQ1ExvHg8uWUpKU7A96xd9Hy2MqdfYZ-OyFTlkwxeB9Ux7evk8-xZp8PUgPNmeXzcZnPWGysK3TU1DImUOxz0cjUQFwYZvZEzxxMDOLSbomidpefLK0dTFlx7CIlGI4nKsLYwM_4wJ5gHiDgid_C1gy4TD1IrAH6WeJEn72pZCrCXXSdH; path=/; secure; samesite=none; Partitioned"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "RateLimit-Limit",
+											"value": "HttpRequestRatePerPort:1500/m"
+										},
+										{
+											"key": "RateLimit-Limit",
+											"value": "HttpRequestRatePerPort:1500/m"
+										},
+										{
+											"key": "RateLimit-Limit",
+											"value": "ClientConnectionsPerPort: max 1000"
+										},
+										{
+											"key": "RateLimit-Remaining",
+											"value": "HttpRequestRatePerPort:1499"
+										},
+										{
+											"key": "RateLimit-Remaining",
+											"value": "HttpRequestRatePerPort:1498"
+										},
+										{
+											"key": "RateLimit-Remaining",
+											"value": "ClientConnectionsPerPort:1000"
+										},
+										{
+											"key": "RateLimit-Reset",
+											"value": "HttpRequestRatePerPort:37s"
+										},
+										{
+											"key": "RateLimit-Reset",
+											"value": "HttpRequestRatePerPort:42s"
+										},
+										{
+											"key": "X-Report-Abuse",
+											"value": "https://msrc.microsoft.com/report/abuse"
+										},
+										{
+											"key": "X-Report-Abuse",
+											"value": "https://msrc.microsoft.com/report/abuse"
+										},
+										{
+											"key": "x-ms-ratelimit-limit",
+											"value": "1500"
+										},
+										{
+											"key": "x-ms-ratelimit-remaining",
+											"value": "1496"
+										},
+										{
+											"key": "x-ms-ratelimit-used",
+											"value": "4"
+										},
+										{
+											"key": "x-ms-ratelimit-reset",
+											"value": "0"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "vssaas-request-id",
+											"value": "1107ccb0-987c-44f5-b46f-89890d31228c"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "x-served-by",
+											"value": "tunnels-prod-rel-uks1-v3-cluster"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex, nofollow"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": 1,\n        \"title\": \"The Pragmatic Programmer\",\n        \"author\": \"Andrew Hunt\",\n        \"isbn\": \"9780135957059\",\n        \"quantity\": 3,\n        \"shelf_location\": \"A1\",\n        \"createdAt\": \"2025-08-23T14:19:39.190Z\",\n        \"updatedAt\": \"2025-08-23T14:19:39.190Z\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "Create Book",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/11.4.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"title\": \"asden asden\",\n  \"author\": \"Andrew Hunt\",\n  \"isbn\": \"8476556474646\",\n  \"quantity\": 3,\n  \"shelf_location\": \"A1\"\n}"
+								},
+								"url": {
+									"raw": "{{base-URL}}/books",
+									"host": [
+										"{{base-URL}}"
+									],
+									"path": [
+										"books"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Create Book",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "User-Agent",
+												"value": "insomnia/11.4.0"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"title\": \"asden asden\",\n  \"author\": \"Andrew Hunt\",\n  \"isbn\": \"8476556474646\",\n  \"quantity\": 3,\n  \"shelf_location\": \"A1\"\n}"
+										},
+										"url": {
+											"raw": "{{base-URL}}/books",
+											"host": [
+												"{{base-URL}}"
+											],
+											"path": [
+												"books"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sat, 23 Aug 2025 14:23:06 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "189"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache,no-store"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"bd-2UD/Zn58EWcIwWA4O9+eqpM95Hg\""
+										},
+										{
+											"key": "Expires",
+											"value": "Thu, 01 Jan 1970 00:00:00 GMT"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Set-Cookie",
+											"value": ".Tunnels.Relay.WebForwarding.Cookies=CfDJ8Cs4yarcs6pKkdu0hlKHsZu905P8k_7lUjlFKVRW59CRcuzZuAlSEDNVGlO0m0k3RTHIdQ4dI1HSxd3tELyJXO29FG3MYUppHZtFa7Y5OLSx-MrBbIdzMweGIziFo2SGvt2esA5Q7IEAMhR5HKf2NkffvdpN0UFIH7aJjR9DMIpRLOYHlGQ-yHGeXFxI46p28OxpnwamK3np9UN15BYwNIDadFUjgtH3rrF2biNRSKzHRAu3ceO2awsUz6_8fJugmQLRXNkXloxXyz4K-oayIfklynbVbih4bFQepEtBCnPnQS-q09Y7Ia1_YOOrdjjjqjoW-akKydNI87Pp9sS4274Sl04fn8K_g93EMVWhW9nq81WsiS9u5ZR_6010gGApcI7-BKITCwETfEQwMr-xAq7xNoe1C1zzElCQAabLggHwFvUdz8PlFvqvVBE14TWxZqffkg5SXYAs2qw6ZhEnUFQNYuUcJNo_hUl7JVWeHI_1VNTrsxK-Zo-3vn6uJJNSP84PAgrXvWd8poL6mx1FuyFwgm0mrUTVwa0ZQpGn8KCRbozRHM3oCutZ-3cB000m_GB7hfiSgZBPMDrDMjfH3J-7IrUSi1ZWUfm4pykdHQuEjrXK-1wWMaQGi-0C1WQIM3_-B03q4emnEEl_Y1ofkNxa6rBclqjhqo9n_83isqfHx9fWxh4OKYtPxl98yNkb1N2OzgwoaU-ZcA3_Y9j8pI90zRxejcRlhujC0mu2qdHUaHJiwxPFo8mw1EH8NYci7AIGYafuX437w_ZeVpB6vQ8HTkPRxPQzWbK2w1JGSkZ9vjUdyFfD7A7cxjcd4tI7LSkww1KKC1uZwgCIhIXbJiP2EVfGCJiy9CUOmhOAKS082v0Vq5z8ii9ddbzn8fGlLjZyMrgDEY6EYwofXQjvdlL1dpaRqV3KPyevO-9CeNa8zgbFCYdQXJAjIr7Bul2mbLfLBxFQHlkP1rLJ7uosmKsoa5qekpVwXEcwbJCCanI-; path=/; secure; samesite=none; Partitioned"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "RateLimit-Limit",
+											"value": "HttpRequestRatePerPort:1500/m"
+										},
+										{
+											"key": "RateLimit-Limit",
+											"value": "HttpRequestRatePerPort:1500/m"
+										},
+										{
+											"key": "RateLimit-Remaining",
+											"value": "HttpRequestRatePerPort:1499"
+										},
+										{
+											"key": "RateLimit-Remaining",
+											"value": "HttpRequestRatePerPort:1499"
+										},
+										{
+											"key": "RateLimit-Reset",
+											"value": "HttpRequestRatePerPort:15s"
+										},
+										{
+											"key": "RateLimit-Reset",
+											"value": "HttpRequestRatePerPort:8s"
+										},
+										{
+											"key": "X-Report-Abuse",
+											"value": "https://msrc.microsoft.com/report/abuse"
+										},
+										{
+											"key": "X-Report-Abuse",
+											"value": "https://msrc.microsoft.com/report/abuse"
+										},
+										{
+											"key": "x-ms-ratelimit-limit",
+											"value": ""
+										},
+										{
+											"key": "x-ms-ratelimit-remaining",
+											"value": ""
+										},
+										{
+											"key": "x-ms-ratelimit-used",
+											"value": "1"
+										},
+										{
+											"key": "x-ms-ratelimit-reset",
+											"value": ""
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "x-ratelimit-limit",
+											"value": "50"
+										},
+										{
+											"key": "x-ratelimit-remaining",
+											"value": "47"
+										},
+										{
+											"key": "x-ratelimit-reset",
+											"value": "1755959680"
+										},
+										{
+											"key": "vssaas-request-id",
+											"value": "3da66415-0599-4e6c-9974-cb1cc4f4fecd"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "x-served-by",
+											"value": "tunnels-prod-rel-uks1-v3-cluster"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex, nofollow"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 3,\n    \"title\": \"asden asden\",\n    \"author\": \"Andrew Hunt\",\n    \"isbn\": \"8476556474646\",\n    \"quantity\": 3,\n    \"shelf_location\": \"A1\",\n    \"updatedAt\": \"2025-08-23T14:23:06.640Z\",\n    \"createdAt\": \"2025-08-23T14:23:06.640Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Get Book by (title/isbn/author)",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/11.4.0"
+									}
+								],
+								"url": {
+									"raw": "{{base-URL}}/books/search?title=The Pragmatic Programmer",
+									"host": [
+										"{{base-URL}}"
+									],
+									"path": [
+										"books",
+										"search"
+									],
+									"query": [
+										{
+											"key": "title",
+											"value": "The Pragmatic Programmer"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get Book by (title/isbn/author)",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "User-Agent",
+												"value": "insomnia/11.4.0"
+											}
+										],
+										"url": {
+											"raw": "{{base-URL}}/books/search?title=The Pragmatic Programmer",
+											"host": [
+												"{{base-URL}}"
+											],
+											"path": [
+												"books",
+												"search"
+											],
+											"query": [
+												{
+													"key": "title",
+													"value": "The Pragmatic Programmer"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sat, 23 Aug 2025 14:16:20 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "204"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"cc-oxKkwbVoS/cRCYiqcdSxmdnjW7g\""
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "RateLimit-Limit",
+											"value": "HttpRequestRatePerPort:1500/m"
+										},
+										{
+											"key": "RateLimit-Remaining",
+											"value": "HttpRequestRatePerPort:1499"
+										},
+										{
+											"key": "RateLimit-Reset",
+											"value": "HttpRequestRatePerPort:51s"
+										},
+										{
+											"key": "X-Report-Abuse",
+											"value": "https://msrc.microsoft.com/report/abuse"
+										},
+										{
+											"key": "x-ms-ratelimit-limit",
+											"value": ""
+										},
+										{
+											"key": "x-ms-ratelimit-remaining",
+											"value": ""
+										},
+										{
+											"key": "x-ms-ratelimit-used",
+											"value": "1"
+										},
+										{
+											"key": "x-ms-ratelimit-reset",
+											"value": ""
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex, nofollow"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "VsSaaS-Request-Id",
+											"value": "609f1563-0914-4dd5-87a1-96b85c3fdb7d"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "X-Served-By",
+											"value": "tunnels-prod-rel-euw-v3-cluster"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": 1,\n        \"title\": \"The Pragmatic Programmer\",\n        \"author\": \"Andrew Hunt\",\n        \"isbn\": \"9780135957059\",\n        \"quantity\": 3,\n        \"shelf_location\": \"A1\",\n        \"createdAt\": \"2025-08-23T13:45:55.546Z\",\n        \"updatedAt\": \"2025-08-23T13:45:55.546Z\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "Edit Book by Id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/11.4.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"quantity\": 3\n}"
+								},
+								"url": {
+									"raw": "{{base-URL}}/books/1",
+									"host": [
+										"{{base-URL}}"
+									],
+									"path": [
+										"books",
+										"1"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Edit Book by Id",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "User-Agent",
+												"value": "insomnia/11.4.0"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"quantity\": 3\n}"
+										},
+										"url": {
+											"raw": "{{base-URL}}/books/1",
+											"host": [
+												"{{base-URL}}"
+											],
+											"path": [
+												"books",
+												"1"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sat, 23 Aug 2025 14:17:06 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "202"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"ca-g6TRAS/hdWTm9nwiBPEb5yXL5Jo\""
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "RateLimit-Limit",
+											"value": "HttpRequestRatePerPort:1500/m"
+										},
+										{
+											"key": "RateLimit-Limit",
+											"value": "ClientConnectionsPerPort: max 1000"
+										},
+										{
+											"key": "RateLimit-Remaining",
+											"value": "HttpRequestRatePerPort:1498"
+										},
+										{
+											"key": "RateLimit-Remaining",
+											"value": "ClientConnectionsPerPort:1000"
+										},
+										{
+											"key": "RateLimit-Reset",
+											"value": "HttpRequestRatePerPort:33s"
+										},
+										{
+											"key": "X-Report-Abuse",
+											"value": "https://msrc.microsoft.com/report/abuse"
+										},
+										{
+											"key": "x-ms-ratelimit-limit",
+											"value": "1500"
+										},
+										{
+											"key": "x-ms-ratelimit-remaining",
+											"value": "1496"
+										},
+										{
+											"key": "x-ms-ratelimit-used",
+											"value": "4"
+										},
+										{
+											"key": "x-ms-ratelimit-reset",
+											"value": "0"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex, nofollow"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "VsSaaS-Request-Id",
+											"value": "2f131aac-de9a-4360-8e34-2e4f828c066d"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "X-Served-By",
+											"value": "tunnels-prod-rel-euw-v3-cluster"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 1,\n    \"title\": \"The Pragmatic Programmer\",\n    \"author\": \"Andrew Hunt\",\n    \"isbn\": \"9780135957059\",\n    \"quantity\": 3,\n    \"shelf_location\": \"A1\",\n    \"createdAt\": \"2025-08-23T13:45:55.546Z\",\n    \"updatedAt\": \"2025-08-23T13:45:55.546Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete Book by Id",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/11.4.0"
+									}
+								],
+								"url": {
+									"raw": "{{base-URL}}/books/1",
+									"host": [
+										"{{base-URL}}"
+									],
+									"path": [
+										"books",
+										"1"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Delete Book by Id",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "User-Agent",
+												"value": "insomnia/11.4.0"
+											}
+										],
+										"url": {
+											"raw": "{{base-URL}}/books/1",
+											"host": [
+												"{{base-URL}}"
+											],
+											"path": [
+												"books",
+												"1"
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sat, 23 Aug 2025 14:16:39 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "26"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache,no-store"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1a-9K7Ys+5Z9m3qczPTmMk82VGBL7g\""
+										},
+										{
+											"key": "Expires",
+											"value": "Thu, 01 Jan 1970 00:00:00 GMT"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Set-Cookie",
+											"value": ".Tunnels.Relay.WebForwarding.Cookies=CfDJ8Cs4yarcs6pKkdu0hlKHsZsIZPgvuZ_I_iPIbaHXdszpv9a91iWQKr_mQ-pH0UmoPeW-sINEyh-XqngZvDCJ_LxIJnq48EWZQeOeZFdBllzzpUQSadLW2iVNq7GhY4EEEz7wYVTwYcYcmdhtbXEApQ24vmX9c4u3OooOwF-2KERxVQ8vuMcWTmB4bjb7OpoadfUDuM3eDLfuBnjs-_yeD7cIwCT84J9F4VPxqLmRenYRLZcKTTC8sZst2Mzm7wC7qSGRGc2vhPg0RnbnO8B9cPhsXw9N-oqNCjRcESjVGOCy841AGnWxMMF9ypFZeO_I89rIvgIf3GMtAV5KomzctviOZQb-kgCHnsYVpr2aqcwY8sn56fXNbJ-0n07J-J4mrcSWwPWbgEF6R-H1ZRR5BsDZZZJAkXDx6soWlEVamFUBONRTSy43Wma_bio_8SREUBUF-EJhijn0r65lqJ3avO_FB6J9D1ZEuQQvaOkrGpNETXcvITey2-VyUrMj8LRI_HhJRFBGEnzS5RcO4AZ49DKmmBilQnRO89nnCP8f2Wg2-gCfmZd5tWhBmIgqVLHOjEaUo4iHrmYodPQZSs6VSjO4CFFbJlJvmhm7ttWnJDgD_Wz6iRdOJDzsRZ5ZkwgxcuJGx_GD0xRV8n_fkI1h-QqXJHVAJP-fK3kpTuTRK1wfrZQdyiKyxtlI1C0wlYwdjENufztudBkg0fDuWjQl5ZItQwngnygrnBa_NVTITfmn5R2QBq9l8KbrJfp52alegfU8yA8fq8sEEoRS3Q7tkvl14toVRzXND9tcgXmJbpRVVRqa6XI6DdcJoQs08PbTZZrF3qhVWJwUvTCs8E2rnwB4u_LsOxHuAnwE8TylAExZuhDj3dOmhNDhI0A1OTYB16thrfoUrUhEkZyhOGyTVUoJf-v5Ikrs70LL4jXodIIn76F8ymo_ODAeWA9QYFYmBPW41TgZJxPUPfgGRLtCThpO2_F1_YcaDTgPpsKz5Yf4; path=/; secure; samesite=none; Partitioned"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "RateLimit-Limit",
+											"value": "HttpRequestRatePerPort:1500/m"
+										},
+										{
+											"key": "RateLimit-Remaining",
+											"value": "HttpRequestRatePerPort:1499"
+										},
+										{
+											"key": "RateLimit-Reset",
+											"value": "HttpRequestRatePerPort:60s"
+										},
+										{
+											"key": "X-Report-Abuse",
+											"value": "https://msrc.microsoft.com/report/abuse"
+										},
+										{
+											"key": "x-ms-ratelimit-limit",
+											"value": "1500"
+										},
+										{
+											"key": "x-ms-ratelimit-remaining",
+											"value": "1495"
+										},
+										{
+											"key": "x-ms-ratelimit-used",
+											"value": "5"
+										},
+										{
+											"key": "x-ms-ratelimit-reset",
+											"value": "0"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex, nofollow"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "VsSaaS-Request-Id",
+											"value": "7c81f145-761e-47a9-9514-e290fd76a4b8"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "X-Served-By",
+											"value": "tunnels-prod-rel-euw-v3-cluster"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": \"Book not found\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Borrower CRUD",
+					"item": [
+						{
+							"name": "Get Borrowers",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/11.4.0"
+									}
+								],
+								"url": {
+									"raw": "{{base-URL}}/borrowers/",
+									"host": [
+										"{{base-URL}}"
+									],
+									"path": [
+										"borrowers",
+										""
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get Borrowers",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "User-Agent",
+												"value": "insomnia/11.4.0"
+											}
+										],
+										"url": {
+											"raw": "{{base-URL}}/borrowers/",
+											"host": [
+												"{{base-URL}}"
+											],
+											"path": [
+												"borrowers",
+												""
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sat, 23 Aug 2025 14:25:37 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "178"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"b2-xcLst7AmaSj0pEgUcwaJr6Ebq1Q\""
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "RateLimit-Limit",
+											"value": "HttpRequestRatePerPort:1500/m"
+										},
+										{
+											"key": "RateLimit-Limit",
+											"value": "HttpRequestRatePerPort:1500/m"
+										},
+										{
+											"key": "RateLimit-Remaining",
+											"value": "HttpRequestRatePerPort:1499"
+										},
+										{
+											"key": "RateLimit-Remaining",
+											"value": "HttpRequestRatePerPort:1499"
+										},
+										{
+											"key": "RateLimit-Reset",
+											"value": "HttpRequestRatePerPort:38s"
+										},
+										{
+											"key": "RateLimit-Reset",
+											"value": "HttpRequestRatePerPort:37s"
+										},
+										{
+											"key": "X-Report-Abuse",
+											"value": "https://msrc.microsoft.com/report/abuse"
+										},
+										{
+											"key": "X-Report-Abuse",
+											"value": "https://msrc.microsoft.com/report/abuse"
+										},
+										{
+											"key": "x-ms-ratelimit-limit",
+											"value": ""
+										},
+										{
+											"key": "x-ms-ratelimit-remaining",
+											"value": ""
+										},
+										{
+											"key": "x-ms-ratelimit-used",
+											"value": "1"
+										},
+										{
+											"key": "x-ms-ratelimit-reset",
+											"value": ""
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "vssaas-request-id",
+											"value": "5a0b73b2-a563-4b19-a049-ff91e10ae2df"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "x-served-by",
+											"value": "tunnels-prod-rel-uks1-v3-cluster"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex, nofollow"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"John Doe\",\n        \"email\": \"john@example.com\",\n        \"registered_date\": \"2025-08-23T14:25:32.925Z\",\n        \"createdAt\": \"2025-08-23T14:25:32.925Z\",\n        \"updatedAt\": \"2025-08-23T14:25:32.925Z\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "Create Borrower",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/11.4.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"John Doe\",\n  \"email\": \"john@example.com\"\n}"
+								},
+								"url": {
+									"raw": "{{base-URL}}/borrowers",
+									"host": [
+										"{{base-URL}}"
+									],
+									"path": [
+										"borrowers"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Create Borrower",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "User-Agent",
+												"value": "insomnia/11.4.0"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"name\": \"John Doe\",\n  \"email\": \"john@example.com\"\n}"
+										},
+										"url": {
+											"raw": "{{base-URL}}/borrowers",
+											"host": [
+												"{{base-URL}}"
+											],
+											"path": [
+												"borrowers"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sat, 23 Aug 2025 14:25:32 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "176"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache,no-store"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"b0-0mrxUP9UrwaVPwlKx3RrHDN8qZ8\""
+										},
+										{
+											"key": "Expires",
+											"value": "Thu, 01 Jan 1970 00:00:00 GMT"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Set-Cookie",
+											"value": ".Tunnels.Relay.WebForwarding.Cookies=CfDJ8Cs4yarcs6pKkdu0hlKHsZuXowXKDJzTwlT1R3GZJYSSIKI7reSXpJVOE8J0K-l91Toacmm_KY1Vya6GopFRz4075jAhXNWfNbrW3SW4JvNABBoz5QEqNG5XbSBl1L6PXvTVkhyl8RggZsRlS4Qag4vtcpFIoAEMBQxSj2AWwiQhkDaI1oHZ5AKE2dBBIIbaJ71d2_MPX5csaFanJSsQwMKxSBjTc-tsLgF_9dS2KFtMdqpNI2lkFt_J-eoXU6ZsXYTPvm4J32oZwfBt6PmLFYRysS_IN453FW1Il20w8szCeBJrT6TuMwAebQWbGf4KcqXK8XeRwEyWEq84cdnvcLuPjEB4k7TqmJmgWvq7SCV7jj1OfVH5ttwFSXbdoJntubbau10qTTKJXkhyotiK8rFJoS41GYC7b0z-g_NzMu8akjJWqcCd00yrx1Z2_lPEpMud4_dJDhqnQqOOwIUtfdwG7rkf9RwNq67quKeFHyz5KMflFLwk53UHbGq559cwkIW2M61pwXgKvPmx_wLejyTHY1ViHqa9NTwp5OWjXxFmWxvNfF6Kdgaxk-y715WZGQH7s8TnUwc1wpOPOnS5z9yh7vGA92c0Xq-II7zoqBmP1n2iLtGwbET0JIJU1BielWuKBQsGrG43X5921CAvQ9ciX0O-eRooyxP5Ozai8jaNHrVLaHoNHp4pAaY090yH7ajcNh70zDnR6FFetn4NwUu297VFRfbsgTNU0DOebdwenEcptzHR1harPWksdwRLvWqFlk-zuvXflcmlSsvs_8T1xiDKnPIwO0Hdj4-XLlT4JCcKndfnha51A93JJPNd4v0RU2BUMnu3U2F1viRZCfVa8JCoqQJAKOBfagmWDcGos3tBjlAnw69dR-NvO3pw9PLMkxUQ1n3hp6DQhOWq_E0e3-_T9ceCF0TXcxkndP5vxiCpHvHs1eo76ptG9U7qbXUp0zHVRwsrnVZLK_uvCDfJtrl1e4gLBJ7acV_VqAGg; path=/; secure; samesite=none; Partitioned"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "RateLimit-Limit",
+											"value": "HttpRequestRatePerPort:1500/m"
+										},
+										{
+											"key": "RateLimit-Limit",
+											"value": "HttpRequestRatePerPort:1500/m"
+										},
+										{
+											"key": "RateLimit-Remaining",
+											"value": "HttpRequestRatePerPort:1499"
+										},
+										{
+											"key": "RateLimit-Remaining",
+											"value": "HttpRequestRatePerPort:1499"
+										},
+										{
+											"key": "RateLimit-Reset",
+											"value": "HttpRequestRatePerPort:43s"
+										},
+										{
+											"key": "RateLimit-Reset",
+											"value": "HttpRequestRatePerPort:35s"
+										},
+										{
+											"key": "X-Report-Abuse",
+											"value": "https://msrc.microsoft.com/report/abuse"
+										},
+										{
+											"key": "X-Report-Abuse",
+											"value": "https://msrc.microsoft.com/report/abuse"
+										},
+										{
+											"key": "x-ms-ratelimit-limit",
+											"value": ""
+										},
+										{
+											"key": "x-ms-ratelimit-remaining",
+											"value": ""
+										},
+										{
+											"key": "x-ms-ratelimit-used",
+											"value": "1"
+										},
+										{
+											"key": "x-ms-ratelimit-reset",
+											"value": ""
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "vssaas-request-id",
+											"value": "d9007740-330c-473b-aa9c-ffc3d5b348cb"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "x-served-by",
+											"value": "tunnels-prod-rel-uks1-v3-cluster"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex, nofollow"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"registered_date\": \"2025-08-23T14:25:32.925Z\",\n    \"id\": 1,\n    \"name\": \"John Doe\",\n    \"email\": \"john@example.com\",\n    \"updatedAt\": \"2025-08-23T14:25:32.925Z\",\n    \"createdAt\": \"2025-08-23T14:25:32.925Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Get All Books Of Borrower With Id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/11.4.0"
+									}
+								],
+								"url": {
+									"raw": "{{base-URL}}/borrowers/1/books",
+									"host": [
+										"{{base-URL}}"
+									],
+									"path": [
+										"borrowers",
+										"1",
+										"books"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All Books Of Borrower With Id",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "User-Agent",
+												"value": "insomnia/11.4.0"
+											}
+										],
+										"url": {
+											"raw": "{{base-URL}}/borrowers/1/books",
+											"host": [
+												"{{base-URL}}"
+											],
+											"path": [
+												"borrowers",
+												"1",
+												"books"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sat, 23 Aug 2025 14:27:27 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "448"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1c0-SA+e1fhrwy7amf+vW/cmtmdoJAc\""
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "RateLimit-Limit",
+											"value": "HttpRequestRatePerPort:1500/m"
+										},
+										{
+											"key": "RateLimit-Limit",
+											"value": "HttpRequestRatePerPort:1500/m"
+										},
+										{
+											"key": "RateLimit-Remaining",
+											"value": "HttpRequestRatePerPort:1499"
+										},
+										{
+											"key": "RateLimit-Remaining",
+											"value": "HttpRequestRatePerPort:1499"
+										},
+										{
+											"key": "RateLimit-Reset",
+											"value": "HttpRequestRatePerPort:18s"
+										},
+										{
+											"key": "RateLimit-Reset",
+											"value": "HttpRequestRatePerPort:39s"
+										},
+										{
+											"key": "X-Report-Abuse",
+											"value": "https://msrc.microsoft.com/report/abuse"
+										},
+										{
+											"key": "X-Report-Abuse",
+											"value": "https://msrc.microsoft.com/report/abuse"
+										},
+										{
+											"key": "x-ms-ratelimit-limit",
+											"value": ""
+										},
+										{
+											"key": "x-ms-ratelimit-remaining",
+											"value": ""
+										},
+										{
+											"key": "x-ms-ratelimit-used",
+											"value": "1"
+										},
+										{
+											"key": "x-ms-ratelimit-reset",
+											"value": ""
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "vssaas-request-id",
+											"value": "0667a517-032b-4987-a29f-e40f41098873"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "x-served-by",
+											"value": "tunnels-prod-rel-uks1-v3-cluster"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex, nofollow"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": 1,\n        \"borrowed_date\": \"2025-08-23T14:27:16.701Z\",\n        \"due_date\": \"2025-09-01T00:00:00.000Z\",\n        \"returned_date\": null,\n        \"status\": \"borrowed\",\n        \"createdAt\": \"2025-08-23T14:27:16.701Z\",\n        \"updatedAt\": \"2025-08-23T14:27:16.701Z\",\n        \"borrower_id\": 1,\n        \"book_id\": 1,\n        \"Book\": {\n            \"id\": 1,\n            \"title\": \"The Pragmatic Programmer\",\n            \"author\": \"Andrew Hunt\",\n            \"isbn\": \"9780135957059\",\n            \"quantity\": 2,\n            \"shelf_location\": \"A1\",\n            \"createdAt\": \"2025-08-23T14:19:39.190Z\",\n            \"updatedAt\": \"2025-08-23T14:27:16.703Z\"\n        }\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "Edit Borrower by Id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/11.4.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"john Doe\"\n}"
+								},
+								"url": {
+									"raw": "{{base-URL}}/borrowers/4",
+									"host": [
+										"{{base-URL}}"
+									],
+									"path": [
+										"borrowers",
+										"4"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Edit Borrower by Id",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "User-Agent",
+												"value": "insomnia/11.4.0"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"name\": \"john Asden\"\n}"
+										},
+										"url": {
+											"raw": "{{base-URL}}/borrowers/1",
+											"host": [
+												"{{base-URL}}"
+											],
+											"path": [
+												"borrowers",
+												"1"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sat, 23 Aug 2025 14:29:44 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "178"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache,no-store"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"b2-hyM7qlVnb94x2NKP1/cxX9if9QQ\""
+										},
+										{
+											"key": "Expires",
+											"value": "Thu, 01 Jan 1970 00:00:00 GMT"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Set-Cookie",
+											"value": ".Tunnels.Relay.WebForwarding.Cookies=CfDJ8Cs4yarcs6pKkdu0hlKHsZv9U99XqlV0OogfbDxa0hcaEF6NNiINxoE-dJ2mWjk87VRA8NSmt4qe01E-DUb2_CUo5Ct75Qj6km4iNlU7BKq82T1b4Rnrf0okVKBQ6mgktiEYZ8O7O5TQpmwnN28CmrLHsBvN_01Ptm2EXjl0hyMOj_ziRFN3v7v2IFnFxjE2MxcNAPEyRsgM4pOrwdfFRZyuVFi9iTpe_PaNfnBf_twqOCXXg-Uotgas6OAlLr8b75q1IDcvw9woYPHlRATighoX9W1MATB4qVAzl2__pOGVyVQ02vPTxJ8dwoAKKlYbNjc1UXO_3NAu22ByTfLlHs1pf03qW92YE5-5lehOJhpEXuPaTfl3yOugEgoNQ0fBxk78cK54J-wZFI-PhYGN3M_xuunG84I4y2wvE3SR1BEqCSrMYD44naA90bxIRWMT0DOANrmlmfwbNr20Dsue9IXw7XODiFXi0c2TyB00KGMIF1Rqv2xkjqsVIawmdiVcruscvhjiEwf8F2ipqcUa77I8gFko08g100kYaPeKj7tM5KRVj8bSXg0yK4303Ny6n_bbxsK1NhPn9xAyTikhneKoEVBRiD_pci-BAElHJVXSQbKERnQIxT6iqm4feF64pXMJ0Rqdk2SultTeoQw6Sy-k_4qrGjhd4VRb-6pPd3HWjiQy516MLxTpnr85A9cUvkkGyP2-SszrzvnIqm6IWg2PlnBIBrk6RQkJvlQMv-TrxDOmFpNM72QEtZtYYrILW0llt7D4g6ulD5I4NDtFE5DYO290cH2p0iyLzEtKVp8MSumn-uEwSgOuZMQSM4idtIuqc0bYfETUkvAcxsRfnTlGa5ZYPp5q8ILj3nutXbeG8mgOVwpCDXRkPyVMCntudt9qvfRNvVOn0Mnm-8-_z45Wzxg9LUd_73VY7ewA3QheSyEUmrRGRrDKKoznT725Fnh2L5YA2EZuoT28tK3x1EaWzIrkV7FRvWVIOI0obS_c; path=/; secure; samesite=none; Partitioned"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "RateLimit-Limit",
+											"value": "HttpRequestRatePerPort:1500/m"
+										},
+										{
+											"key": "RateLimit-Remaining",
+											"value": "HttpRequestRatePerPort:1499"
+										},
+										{
+											"key": "RateLimit-Reset",
+											"value": "HttpRequestRatePerPort:19s"
+										},
+										{
+											"key": "X-Report-Abuse",
+											"value": "https://msrc.microsoft.com/report/abuse"
+										},
+										{
+											"key": "x-ms-ratelimit-limit",
+											"value": "1500"
+										},
+										{
+											"key": "x-ms-ratelimit-remaining",
+											"value": "1497"
+										},
+										{
+											"key": "x-ms-ratelimit-used",
+											"value": "3"
+										},
+										{
+											"key": "x-ms-ratelimit-reset",
+											"value": "0"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex, nofollow"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "VsSaaS-Request-Id",
+											"value": "3e16494e-f298-4e18-a29c-65c6cc73a592"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "X-Served-By",
+											"value": "tunnels-prod-rel-euw-v3-cluster"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 1,\n    \"name\": \"john Asden\",\n    \"email\": \"john@example.com\",\n    \"registered_date\": \"2025-08-23T14:25:32.925Z\",\n    \"createdAt\": \"2025-08-23T14:25:32.925Z\",\n    \"updatedAt\": \"2025-08-23T14:29:44.132Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete Borrower by Id",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/11.4.0"
+									}
+								],
+								"url": {
+									"raw": "{{base-URL}}/borrowers/5",
+									"host": [
+										"{{base-URL}}"
+									],
+									"path": [
+										"borrowers",
+										"5"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Borrowing CRUD",
+					"item": [
+						{
+							"name": "Borrow a Book",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/11.4.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"borrowerId\": 1,\n  \"bookId\": 1,\n  \"dueDate\": \"2025-09-01T00:00:00Z\"\n}"
+								},
+								"url": {
+									"raw": "{{base-URL}}/borrowings",
+									"host": [
+										"{{base-URL}}"
+									],
+									"path": [
+										"borrowings"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Borrow a Book",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "User-Agent",
+												"value": "insomnia/11.4.0"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"borrowerId\": 1,\n  \"bookId\": 1,\n  \"dueDate\": \"2025-09-01T00:00:00Z\"\n}"
+										},
+										"url": {
+											"raw": "{{base-URL}}/borrowings",
+											"host": [
+												"{{base-URL}}"
+											],
+											"path": [
+												"borrowings"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sat, 23 Aug 2025 14:27:16 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "236"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache,no-store"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"ec-2PcMGjC9iQwfPHVbk+fwaaNwFP8\""
+										},
+										{
+											"key": "Expires",
+											"value": "Thu, 01 Jan 1970 00:00:00 GMT"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Set-Cookie",
+											"value": ".Tunnels.Relay.WebForwarding.Cookies=CfDJ8Cs4yarcs6pKkdu0hlKHsZuLso-rlpElYtYDgWE9nIcMegVOhyGuq5V3fNtZxmb8bdI3zZAuA04x69l7121WDjrucpX_8IKr7GaqJ8VTCRpxXlIqL30ArcfCARiwuWQaeLWjSSd4iv025yPMeMMEMMbCVeLlQNPbTZx3DiuhpZW36HQq-IuhSHyV16e2gZsNMhruJEkpvxE2Wh5FjKuaqiuzhHY66ZY3QVlqr2dP06dff0Wa8Ux8sJ3_dzWIXlyuIwyVj1OhH-R34t0dycnN-SQoLvdyXvhi0Z054bwNtvpC7diiIpfaXnEcTJ3MMZ8kqU8_lgcDEnpNC3t3ptKiVLRO-fbLrdxAp433-ESkMUrHsoaIIdIhR-IgSn4LExwT4fC7KyZA_0YUiwdQYbJqxZfebnfp7zoDcaIFTSqhK_RDmzqi49yydxq-yS6R5_DM-FyAbfk2adCrYf1PWC7yC28aCvRNvIF-jjGjrMU9FPmKQhBY-Ls1vYtR3foN9eWBpD11YIX7VqUe-rEkYN8fAsOUj7iyLAChdd4JTSJ9_OmrU5JMjmlq6lTgf_kQyUJawYwqC-Nqxg6P6cyoum72WYV_dULW8jeFS7mHwt4nTCrW9UPgnOdNdh1pZV4F7dx_r1vh8hUJ5lgZ7YGkQEopj7SqaUIAIhohzvQSNgipOPxkdseDqLYRxuqhPdnd-T3N5ihGA7X4aKjb9uApma0WXBoPwwRqKaV9ZRthndsRv56AU7khCU_K8ZlXLGCtowxBFZO73yPVj9uvhVfMOpLcqk62RS5xxMLPkv1PE0xdA3fqBbXdok4IlkVQ4z8-FyCAab3qkxkqNWPTYr6dorFHvcCuJ8Grkb9pSRH8oHaFIQSWrfLVJv7agqOK78xUwlCrMxRSR4yrlrd_t1EBFQ3x2MTPIcE0iMQGiuYWCYMpcnx2I07M7aKvMMx6GoVinMLPxW5ixBPufAW93_Ma_w0hXWqaNDZF1xOiVvHEc7IqSmiO; path=/; secure; samesite=none; Partitioned"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "RateLimit-Limit",
+											"value": "HttpRequestRatePerPort:1500/m"
+										},
+										{
+											"key": "RateLimit-Limit",
+											"value": "HttpRequestRatePerPort:1500/m"
+										},
+										{
+											"key": "RateLimit-Limit",
+											"value": "ClientConnectionsPerPort: max 1000"
+										},
+										{
+											"key": "RateLimit-Remaining",
+											"value": "HttpRequestRatePerPort:1499"
+										},
+										{
+											"key": "RateLimit-Remaining",
+											"value": "HttpRequestRatePerPort:1499"
+										},
+										{
+											"key": "RateLimit-Remaining",
+											"value": "ClientConnectionsPerPort:1000"
+										},
+										{
+											"key": "RateLimit-Reset",
+											"value": "HttpRequestRatePerPort:49s"
+										},
+										{
+											"key": "RateLimit-Reset",
+											"value": "HttpRequestRatePerPort:51s"
+										},
+										{
+											"key": "X-Report-Abuse",
+											"value": "https://msrc.microsoft.com/report/abuse"
+										},
+										{
+											"key": "X-Report-Abuse",
+											"value": "https://msrc.microsoft.com/report/abuse"
+										},
+										{
+											"key": "x-ms-ratelimit-limit",
+											"value": ""
+										},
+										{
+											"key": "x-ms-ratelimit-remaining",
+											"value": ""
+										},
+										{
+											"key": "x-ms-ratelimit-used",
+											"value": "1"
+										},
+										{
+											"key": "x-ms-ratelimit-reset",
+											"value": ""
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "x-ratelimit-limit",
+											"value": "100"
+										},
+										{
+											"key": "x-ratelimit-remaining",
+											"value": "99"
+										},
+										{
+											"key": "x-ratelimit-reset",
+											"value": "1755960137"
+										},
+										{
+											"key": "vssaas-request-id",
+											"value": "7655ee02-c480-4532-bfff-bfffe0c4965c"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "x-served-by",
+											"value": "tunnels-prod-rel-uks1-v3-cluster"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex, nofollow"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"borrowed_date\": \"2025-08-23T14:27:16.701Z\",\n    \"id\": 1,\n    \"borrower_id\": 1,\n    \"book_id\": 1,\n    \"due_date\": \"2025-09-01T00:00:00.000Z\",\n    \"status\": \"borrowed\",\n    \"updatedAt\": \"2025-08-23T14:27:16.701Z\",\n    \"createdAt\": \"2025-08-23T14:27:16.701Z\",\n    \"returned_date\": null\n}"
+								}
+							]
+						},
+						{
+							"name": "Return a Book",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/11.4.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"borrowerId\": 6,\n  \"bookId\": 3,\n  \"dueDate\": \"2025-09-01T00:00:00Z\"\n}"
+								},
+								"url": {
+									"raw": "{{base-URL}}/borrowings/3/return",
+									"host": [
+										"{{base-URL}}"
+									],
+									"path": [
+										"borrowings",
+										"3",
+										"return"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Return a Book",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "User-Agent",
+												"value": "insomnia/11.4.0"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"borrowerId\": 1,\n  \"bookId\": 1,\n  \"dueDate\": \"2025-09-01T00:00:00.000Z\"\n}"
+										},
+										"url": {
+											"raw": "{{base-URL}}/borrowings/1/return",
+											"host": [
+												"{{base-URL}}"
+											],
+											"path": [
+												"borrowings",
+												"1",
+												"return"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sat, 23 Aug 2025 14:31:30 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "258"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"102-YDy9NTi7h1Utbd+bTMxROyYiaTE\""
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "RateLimit-Limit",
+											"value": "HttpRequestRatePerPort:1500/m"
+										},
+										{
+											"key": "RateLimit-Remaining",
+											"value": "HttpRequestRatePerPort:1499"
+										},
+										{
+											"key": "RateLimit-Reset",
+											"value": "HttpRequestRatePerPort:31s"
+										},
+										{
+											"key": "X-Report-Abuse",
+											"value": "https://msrc.microsoft.com/report/abuse"
+										},
+										{
+											"key": "x-ms-ratelimit-limit",
+											"value": ""
+										},
+										{
+											"key": "x-ms-ratelimit-remaining",
+											"value": ""
+										},
+										{
+											"key": "x-ms-ratelimit-used",
+											"value": "1"
+										},
+										{
+											"key": "x-ms-ratelimit-reset",
+											"value": ""
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex, nofollow"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "VsSaaS-Request-Id",
+											"value": "8422f088-c3a2-4d8f-a0e9-e3c73bc99def"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "X-Served-By",
+											"value": "tunnels-prod-rel-euw-v3-cluster"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 1,\n    \"borrowed_date\": \"2025-08-23T14:27:16.701Z\",\n    \"due_date\": \"2025-09-01T00:00:00.000Z\",\n    \"returned_date\": \"2025-08-23T14:31:30.081Z\",\n    \"status\": \"returned\",\n    \"createdAt\": \"2025-08-23T14:27:16.701Z\",\n    \"updatedAt\": \"2025-08-23T14:31:30.081Z\",\n    \"borrower_id\": 1,\n    \"book_id\": 1\n}"
+								}
+							]
+						},
+						{
+							"name": "List Overdue Borrowings",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/11.4.0"
+									}
+								],
+								"url": {
+									"raw": "{{base-URL}}/borrowings/overdue",
+									"host": [
+										"{{base-URL}}"
+									],
+									"path": [
+										"borrowings",
+										"overdue"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "List Overdue Borrowings",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "User-Agent",
+												"value": "insomnia/11.4.0"
+											}
+										],
+										"url": {
+											"raw": "{{base-URL}}/borrowings/overdue",
+											"host": [
+												"{{base-URL}}"
+											],
+											"path": [
+												"borrowings",
+												"overdue"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sat, 23 Aug 2025 14:31:39 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "2"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w\""
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "RateLimit-Limit",
+											"value": "HttpRequestRatePerPort:1500/m"
+										},
+										{
+											"key": "RateLimit-Remaining",
+											"value": "HttpRequestRatePerPort:1499"
+										},
+										{
+											"key": "RateLimit-Reset",
+											"value": "HttpRequestRatePerPort:24s"
+										},
+										{
+											"key": "X-Report-Abuse",
+											"value": "https://msrc.microsoft.com/report/abuse"
+										},
+										{
+											"key": "x-ms-ratelimit-limit",
+											"value": ""
+										},
+										{
+											"key": "x-ms-ratelimit-remaining",
+											"value": ""
+										},
+										{
+											"key": "x-ms-ratelimit-used",
+											"value": "1"
+										},
+										{
+											"key": "x-ms-ratelimit-reset",
+											"value": ""
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex, nofollow"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "VsSaaS-Request-Id",
+											"value": "696fccac-a306-4c53-8411-abc6bae821b9"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "X-Served-By",
+											"value": "tunnels-prod-rel-euw-v3-cluster"
+										}
+									],
+									"cookie": [],
+									"body": "[]"
+								}
+							]
+						},
+						{
+							"name": "List all borrowings",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/11.4.0"
+									}
+								],
+								"url": {
+									"raw": "{{base-URL}}/borrowings",
+									"host": [
+										"{{base-URL}}"
+									],
+									"path": [
+										"borrowings"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "List all borrowings",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "User-Agent",
+												"value": "insomnia/11.4.0"
+											}
+										],
+										"url": {
+											"raw": "{{base-URL}}/borrowings",
+											"host": [
+												"{{base-URL}}"
+											],
+											"path": [
+												"borrowings"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sat, 23 Aug 2025 14:31:47 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "660"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"294-3gppKfTtMMZ5tmUmRoHblu0o7q0\""
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "RateLimit-Limit",
+											"value": "HttpRequestRatePerPort:1500/m"
+										},
+										{
+											"key": "RateLimit-Limit",
+											"value": "ClientConnectionsPerPort: max 1000"
+										},
+										{
+											"key": "RateLimit-Remaining",
+											"value": "HttpRequestRatePerPort:1498"
+										},
+										{
+											"key": "RateLimit-Remaining",
+											"value": "ClientConnectionsPerPort:1000"
+										},
+										{
+											"key": "RateLimit-Reset",
+											"value": "HttpRequestRatePerPort:29s"
+										},
+										{
+											"key": "X-Report-Abuse",
+											"value": "https://msrc.microsoft.com/report/abuse"
+										},
+										{
+											"key": "x-ms-ratelimit-limit",
+											"value": "1500"
+										},
+										{
+											"key": "x-ms-ratelimit-remaining",
+											"value": "1496"
+										},
+										{
+											"key": "x-ms-ratelimit-used",
+											"value": "4"
+										},
+										{
+											"key": "x-ms-ratelimit-reset",
+											"value": "0"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex, nofollow"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "VsSaaS-Request-Id",
+											"value": "026573d8-ecd8-4a5e-8fe1-e77968f4efbc"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "X-Served-By",
+											"value": "tunnels-prod-rel-euw-v3-cluster"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": 1,\n        \"borrowed_date\": \"2025-08-23T14:27:16.701Z\",\n        \"due_date\": \"2025-09-01T00:00:00.000Z\",\n        \"returned_date\": \"2025-08-23T14:31:30.081Z\",\n        \"status\": \"returned\",\n        \"createdAt\": \"2025-08-23T14:27:16.701Z\",\n        \"updatedAt\": \"2025-08-23T14:31:30.081Z\",\n        \"borrower_id\": 1,\n        \"book_id\": 1,\n        \"Book\": {\n            \"id\": 1,\n            \"title\": \"The Pragmatic Programmer\",\n            \"author\": \"Andrew Hunt\",\n            \"isbn\": \"9780135957059\",\n            \"quantity\": 3,\n            \"shelf_location\": \"A1\",\n            \"createdAt\": \"2025-08-23T14:19:39.190Z\",\n            \"updatedAt\": \"2025-08-23T14:31:30.082Z\"\n        },\n        \"Borrower\": {\n            \"id\": 1,\n            \"name\": \"john Asden\",\n            \"email\": \"john@example.com\",\n            \"registered_date\": \"2025-08-23T14:25:32.925Z\",\n            \"createdAt\": \"2025-08-23T14:25:32.925Z\",\n            \"updatedAt\": \"2025-08-23T14:29:44.132Z\"\n        }\n    }\n]"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Reports",
+					"item": [
+						{
+							"name": "Get Last Month of borrowings",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/11.4.0"
+									}
+								],
+								"url": {
+									"raw": "{{base-URL}}/reports/last-month/borrowings.csv",
+									"host": [
+										"{{base-URL}}"
+									],
+									"path": [
+										"reports",
+										"last-month",
+										"borrowings.csv"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get Last Month of borrowings",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "User-Agent",
+												"value": "insomnia/11.4.0"
+											}
+										],
+										"url": {
+											"raw": "{{base-URL}}/reports/last-month/borrowings.csv",
+											"host": [
+												"{{base-URL}}"
+											],
+											"path": [
+												"reports",
+												"last-month",
+												"borrowings.csv"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "plain",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sat, 23 Aug 2025 14:31:57 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "text/csv; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "349"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache,no-store"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"15d-mpLBiKl7qc1NGqzSRKmLmczYK6s\""
+										},
+										{
+											"key": "Expires",
+											"value": "Thu, 01 Jan 1970 00:00:00 GMT"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Set-Cookie",
+											"value": ".Tunnels.Relay.WebForwarding.Cookies=CfDJ8Cs4yarcs6pKkdu0hlKHsZtulSLpBUE7z1wskdrdhPEux21e4faYg321IpqkCyPyWO5Rl3cugAgvLK-NFl3AhsbhXcORjkK7qoDBCuyxFwrwtc3RVr9Y8cSs9k5nmSYrc4KBZiOdGG0np2AbCH7LUMWBoy3i3oJbshBiX47NAO1oVXfRDms8VAEdiZ4cjykRv6WwJrmfDG5SapwYE4u9ecMZ0OxVCJGf1jnpKl0mYnMeJVpg6NQAMv7d7Bu6EK-jmYPVQB8-AHOZjCJEvhyuBsbzAIBx0d9VONZpSoWUOhyo9H8cBs-zhdXyXqoWRmgo3tKK1k6q_UrzCFjMdPKePsVrMRGp3yeAxeoqad2Dya1M54WF0ltndNwOZ6dI0GqKWvBktzjfSctpzQCf6bwrigwfHb1Jr6_mCi5YNfNmVqgk96W7WqLiDkjePRM6PJl9jng6jczFyXE3G_2VnIfR1F_VIZaLLJV6rxt_dllrKpvMQrBTMzoYFylN57LbPhT4vza_7j7CXUnynk8b0-s_GxLYqmFUKUwEXLcojl24593uy-FpDK8Uzz_gAxD7Mhn0p4D5J6XjkW6-9NyoeMncOztkCdv478ksg-zvIF3QJuG62sjmmIlGipxRSsLa-1_n25rjYhijMrT8GtJs0QvGKABLkqhp0IQQaKrzwX2Hxs3tWGpqX9TqMnwEEW-vC_rBDZHXRRq0a2iKzgHqbElEgFk0F_0y-61kHSXSRU9bqwkMo_e-ujWyRohSEboujXPDmZMDMF6YFE6XF0oJN1fS-qQY5hhciB43zRodxp4kret3SDwtIL0VmdQuHhcrs773gfvdlS70d6tBz_N7tRUVyrUCUL8DpNsA8hrNIDf-24iAWrdex0Mkj3pYQ2rcErTSo-MRSc4pf6b-PcciDz-O65nCqVPqDrlxWjQoEkknrkr1NueBhcawA9NFxrjzVI5-bSlHPo6WyGAd0NcsET3B6xw9nz_s1nVn_5NVQItVNuJc; path=/; secure; samesite=none; Partitioned"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "RateLimit-Limit",
+											"value": "HttpRequestRatePerPort:1500/m"
+										},
+										{
+											"key": "RateLimit-Limit",
+											"value": "ClientConnectionsPerPort: max 1000"
+										},
+										{
+											"key": "RateLimit-Remaining",
+											"value": "HttpRequestRatePerPort:1499"
+										},
+										{
+											"key": "RateLimit-Remaining",
+											"value": "ClientConnectionsPerPort:1000"
+										},
+										{
+											"key": "RateLimit-Reset",
+											"value": "HttpRequestRatePerPort:43s"
+										},
+										{
+											"key": "X-Report-Abuse",
+											"value": "https://msrc.microsoft.com/report/abuse"
+										},
+										{
+											"key": "x-ms-ratelimit-limit",
+											"value": "1500"
+										},
+										{
+											"key": "x-ms-ratelimit-remaining",
+											"value": "1495"
+										},
+										{
+											"key": "x-ms-ratelimit-used",
+											"value": "5"
+										},
+										{
+											"key": "x-ms-ratelimit-reset",
+											"value": "0"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Disposition",
+											"value": "attachment; filename=\"borrowings_last_month.csv\""
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex, nofollow"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "VsSaaS-Request-Id",
+											"value": "57b90a18-b12a-4808-8788-10f6558b3396"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "X-Served-By",
+											"value": "tunnels-prod-rel-euw-v3-cluster"
+										}
+									],
+									"cookie": [],
+									"body": "\"borrowing_id\",\"borrower_id\",\"borrower_name\",\"borrower_email\",\"book_id\",\"book_title\",\"book_author\",\"book_isbn\",\"borrowed_date\",\"due_date\",\"returned_date\",\"status\"\n1,1,\"john Asden\",\"john@example.com\",1,\"The Pragmatic Programmer\",\"Andrew Hunt\",\"9780135957059\",\"2025-08-23T14:27:16.701Z\",\"2025-09-01T00:00:00.000Z\",\"2025-08-23T14:31:30.081Z\",\"returned\""
+								}
+							]
+						},
+						{
+							"name": "Get last Month of Overdue",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/11.4.0"
+									}
+								],
+								"url": {
+									"raw": "{{base-URL}}/reports/last-month/overdue.csv",
+									"host": [
+										"{{base-URL}}"
+									],
+									"path": [
+										"reports",
+										"last-month",
+										"overdue.csv"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get last Month of Overdue",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "User-Agent",
+												"value": "insomnia/11.4.0"
+											}
+										],
+										"url": {
+											"raw": "{{base-URL}}/reports/last-month/overdue.csv",
+											"host": [
+												"{{base-URL}}"
+											],
+											"path": [
+												"reports",
+												"last-month",
+												"overdue.csv"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "plain",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sat, 23 Aug 2025 14:32:11 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "text/csv; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "162"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"a2-1AjrjsLu3FkZdSHPxZjfRvZw7bE\""
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "RateLimit-Limit",
+											"value": "HttpRequestRatePerPort:1500/m"
+										},
+										{
+											"key": "RateLimit-Remaining",
+											"value": "HttpRequestRatePerPort:1499"
+										},
+										{
+											"key": "RateLimit-Reset",
+											"value": "HttpRequestRatePerPort:57s"
+										},
+										{
+											"key": "X-Report-Abuse",
+											"value": "https://msrc.microsoft.com/report/abuse"
+										},
+										{
+											"key": "x-ms-ratelimit-limit",
+											"value": ""
+										},
+										{
+											"key": "x-ms-ratelimit-remaining",
+											"value": ""
+										},
+										{
+											"key": "x-ms-ratelimit-used",
+											"value": "1"
+										},
+										{
+											"key": "x-ms-ratelimit-reset",
+											"value": ""
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Disposition",
+											"value": "attachment; filename=\"overdue_last_month.csv\""
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex, nofollow"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "VsSaaS-Request-Id",
+											"value": "1c8600b9-c224-42f6-b106-9d1fea87e1e0"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "X-Served-By",
+											"value": "tunnels-prod-rel-euw-v3-cluster"
+										}
+									],
+									"cookie": [],
+									"body": "\"borrowing_id\",\"borrower_id\",\"borrower_name\",\"borrower_email\",\"book_id\",\"book_title\",\"book_author\",\"book_isbn\",\"borrowed_date\",\"due_date\",\"returned_date\",\"status\""
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "admin123",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "admin",
+				"type": "string"
+			},
+			{
+				"key": "undefined",
+				"type": "any"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base-URL",
+			"value": "http://localhost:3000",
+			"type": "string"
+		}
+	]
+}
