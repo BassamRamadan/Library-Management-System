@@ -9,8 +9,10 @@ const router = express.Router();
 function handleValidation(req, res) {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
-    return res.status(400).json(errorHandler(errors));
+    res.status(400).json({ error: 'Validation error', details: errors.array() });
+    return true;
   }
+  return false;
 }
 
 router.post('/',
